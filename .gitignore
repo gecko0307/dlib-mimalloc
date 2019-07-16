@@ -1,9 +1,4 @@
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Compiled Static libraries
+# Static libraries
 *.a
 *.lib
 
