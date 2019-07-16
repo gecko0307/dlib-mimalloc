@@ -1,0 +1,34 @@
+{
+    "name": "mimalloc-test",
+    "description": "Mimalloc binding for D and dlib",
+    "homepage": "",
+    "license": "Boost",
+    "authors": [
+        "Timur Gafarov"
+    ],
+
+    "importPaths": [
+        "src"
+    ],
+    "sourcePaths": ["src"],
+    "mainSourceFile": "src/main.d",
+
+    "dependencies": {
+		"dlib": "0.16.0",
+        "bindbc-loader": "~>0.1.1"
+    },
+
+    "buildRequirements":[
+        "allowWarnings"
+    ],
+
+    "configurations": [
+        {
+            "name": "application",
+            "targetType": "executable"
+        }
+    ],
+
+    "copyFiles-windows-x86": ["lib/x86/*.dll"],
+    "copyFiles-windows-x86_64": ["lib/x64/*.dll"]
+}
